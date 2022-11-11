@@ -113,6 +113,35 @@ public class ListaEnlazada<E> {
         
         
     }
+    
+    public E eliminar (Integer pos) throws ListaVaciaExcepcion, PosicionNoEncontradaException{
+        if(!estaVacia()){
+            E dato = null;
+            if (pos>= 0 && pos < size){
+                if(pos == 0){
+                    dato = cabecera.getDato();
+                    cabecera = cabecera.getSiguiente();
+                    size--;
+                    
+                }else{
+                    NodoLista<E> aux = cabecera;
+
+                    for (int i = 0; i < pos; i++ ){
+                        aux = aux.getSiguiente();
+                    }
+                    
+                    dato = aux.getDato();
+                    NodoLista<E> proximo= aux.getSiguiente();
+                    aux.setSiguiente(proximo.getSiguiente());
+                    size--;
+                }
+                
+            } else throw new PosicionNoEncontradaException();
+            return dato;
+        }else throw new ListaVaciaExcepcion();
+        
+        
+    }
 
     public void imprimir() {
         System.out.println("-------------------------LISTA ENLAZADA-------------------------");
