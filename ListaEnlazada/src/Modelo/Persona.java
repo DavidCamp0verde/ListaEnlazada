@@ -5,10 +5,13 @@
  */
 package Modelo;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *
  * @author david
  */
+@XmlRootElement
 public class Persona {
     private Integer id;
     private String apellidos;

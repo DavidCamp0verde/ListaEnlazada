@@ -5,6 +5,9 @@
  */
 package Controlador.Listas;
 
+import javax.xml.bind.annotation.XmlAnyElement;
+import javax.xml.bind.annotation.XmlElement;
+
 /**
  *
  * @author david
@@ -22,7 +25,8 @@ public class NodoLista <E>{
         this.dato = dato;
         this.siguiente = siguiente;
     }
-
+    @XmlAnyElement(lax = true)
+    //@XmlElement
     public E getDato() {
         return dato;
     }
@@ -34,7 +38,7 @@ public class NodoLista <E>{
     public NodoLista<E> getSiguiente() {
         return siguiente;
     }
-
+    
     public void setSiguiente(NodoLista<E> siguiente) {
         this.siguiente = siguiente;
     }

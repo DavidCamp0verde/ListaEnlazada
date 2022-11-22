@@ -14,7 +14,7 @@ public class Cuenta {
     private String usuario;
     private String clave;
     private Boolean estado;
-    private Persona persona;
+    private Integer id_persona;
 
     public Integer getId() {
         return id;
@@ -48,13 +48,15 @@ public class Cuenta {
         this.estado = estado;
     }
 
-    public Persona getPersona() {
-        return persona;
+    public Integer getId_persona() {
+        return id_persona;
     }
 
-    public void setPersona(Persona persona) {
-        this.persona = persona;
+    public void setId_persona(Integer id_persona) {
+        this.id_persona = id_persona;
     }
+
+    
     
     
     

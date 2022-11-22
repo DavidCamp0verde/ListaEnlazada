@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listaEnlazada>
+    <cabecera>
+        <persona>
+            <apellidos>campoverde</apellidos>
+            <id>1</id>
+            <nombres>david</nombres>
+        </persona>
+        <siguiente>
+            <persona>
+                <apellidos>Chimbo</apellidos>
+                <id>2</id>
+                <nombres>Jhandry</nombres>
+            </persona>
+        </siguiente>
+    </cabecera>
+    <size>2</size>
+</listaEnlazada>

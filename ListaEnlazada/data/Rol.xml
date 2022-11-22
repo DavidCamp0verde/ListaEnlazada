@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listaEnlazada>
+    <cabecera>
+        <rol>
+            <descripcion>descripcion xd</descripcion>
+            <id>1</id>
+            <nombre>gerente</nombre>
+        </rol>
+        <siguiente>
+            <rol>
+                <descripcion>cajero descripcion xd</descripcion>
+                <id>2</id>
+                <nombre>cajero</nombre>
+            </rol>
+        </siguiente>
+    </cabecera>
+    <size>2</size>
+</listaEnlazada>

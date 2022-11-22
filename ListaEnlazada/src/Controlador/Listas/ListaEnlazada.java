@@ -7,11 +7,13 @@ package Controlador.Listas;
 
 import Controlador.Listas.Excepciones.ListaVaciaExcepcion;
 import Controlador.Listas.Excepciones.PosicionNoEncontradaException;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
  * @author david
  */
+@XmlRootElement
 public class ListaEnlazada<E> {
 
     private NodoLista<E> cabecera;
