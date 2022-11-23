@@ -39,7 +39,7 @@ public class PersonaDao extends AdaptadorDao<Persona>{
     }
     
     public boolean modificar(Integer pos) throws Exception{
-        modificiar(this.persona, pos);
+        modificar(this.persona, pos);
         return true;
     }
     

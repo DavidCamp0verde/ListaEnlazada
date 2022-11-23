@@ -20,7 +20,14 @@
                 <nombres>Consumidor</nombres>
                 <tipoIdentificacion>CEDULA</tipoIdentificacion>
             </persona>
+            <siguiente>
+                <persona>
+                    <apellidos>Intriago</apellidos>
+                    <identificacion>110521411245</identificacion>
+                    <nombres>Steven</nombres>
+                </persona>
+            </siguiente>
         </siguiente>
     </cabecera>
-    <size>2</size>
+    <size>3</size>
 </listaEnlazada>

@@ -46,8 +46,18 @@ public class AdaptadorDao<T> implements InterfazDao<T>{
     }
 
     @Override
-    public void modificiar(T dato, Integer pos) throws FileNotFoundException, JAXBException{
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void modificar(T dato, Integer pos) throws FileNotFoundException, JAXBException{
+        ListaEnlazada<T> lista = listar();
+        try {
+            lista.modificarPosicion(dato, pos);
+            FileOutputStream file = new FileOutputStream(URL);
+            JAXBContext jaxbc = JAXBContext.newInstance(new Class[]{ListaEnlazada.class, this.clazz});
+            Marshaller marshaller = jaxbc.createMarshaller(); //Transforma el objeto a xml
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            marshaller.marshal(lista, file);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
     
     //Pasar de archivo a objeto

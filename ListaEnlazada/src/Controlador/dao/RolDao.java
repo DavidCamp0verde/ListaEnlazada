@@ -36,7 +36,7 @@ public class RolDao extends AdaptadorDao<Rol>{
     }
     
     public boolean modificar(Integer pos) throws Exception{
-        modificiar(this.rol, pos);
+        modificar(this.rol, pos);
         return true;
     }
     

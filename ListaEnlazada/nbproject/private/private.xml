@@ -4,6 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/david/NetBeansProjects/ListaEnlazada/src/Controlador/dao/PersonaDao.java</file>
+            <file>file:/home/david/NetBeansProjects/ListaEnlazada/data/Rol.xml</file>
+            <file>file:/home/david/NetBeansProjects/ListaEnlazada/src/Controlador/Utiles/Utilidades.java</file>
+            <file>file:/home/david/NetBeansProjects/ListaEnlazada/data/Cuenta.xml</file>
             <file>file:/home/david/NetBeansProjects/ListaEnlazada/src/listaenlazada/Main.java</file>
             <file>file:/home/david/NetBeansProjects/ListaEnlazada/src/Vista/FrmInicio.java</file>
             <file>file:/home/david/NetBeansProjects/ListaEnlazada/src/Controlador/dao/RolDao.java</file>

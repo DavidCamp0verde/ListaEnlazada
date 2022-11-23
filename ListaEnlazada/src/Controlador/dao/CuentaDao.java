@@ -40,7 +40,7 @@ public class CuentaDao extends AdaptadorDao<Cuenta>{
     }
     
     public boolean modificar(Integer pos) throws Exception{
-        modificiar(this.cuenta, pos);
+        modificar(this.cuenta, pos);
         return true;
     }
     

@@ -24,6 +24,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
 //        ListaEnlazada<Integer> lista = new ListaEnlazada<>();
 //        lista.insertar(1);
 //        lista.insertar(50);
@@ -39,7 +40,14 @@ public class Main {
 //        } catch (PosicionNoEncontradaException | ListaVaciaExcepcion e) {
 //            System.out.println(e.getMessage());
 //        }
+//        lista.imprimir();
 //        
+//        try {
+//            lista.modificarPosicion(2, 4);
+//        } catch (Exception e) {
+//        }
+//        lista.imprimir();
+        
 //        
 //        lista.imprimir();
 //        System.out.println(lista.getSize());
@@ -95,13 +103,22 @@ public class Main {
         
         try {
             Persona p = new Persona();
+            Persona p2 = new Persona();
+            p2.setApellidos("Intriago");
+            p2.setNombres("Steven");
+            p2.setIdentificacion("110521411245");
             
             p.setApellidos("Chimbo");
             p.setNombres("Jhandry");
-            p.setId(2);
-            ad.guardar(p);
+            p.setId(5);
+            //ad.guardar(p);
+            ad.modificar(p2, 2);
+            
+            
         } catch (Exception e) {
         }
+        
+        
         
     }
     
