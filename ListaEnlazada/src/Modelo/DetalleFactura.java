@@ -5,10 +5,13 @@
  */
 package Modelo;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *
  * @author david
  */
+@XmlRootElement
 public class DetalleFactura {
     private Long id;
     private Factura factura;

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listaEnlazada>
+    <cabecera>
+        <cuenta>
+            <clave>2nnJOdN+mDwWm9im4TMNeg==</clave>
+            <estado>true</estado>
+            <id>1</id>
+            <id_persona>1</id_persona>
+            <usuario>admin@admin.com</usuario>
+        </cuenta>
+    </cabecera>
+    <size>1</size>
+</listaEnlazada>

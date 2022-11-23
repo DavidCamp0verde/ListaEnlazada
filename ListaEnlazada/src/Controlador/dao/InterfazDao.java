@@ -16,7 +16,7 @@ import javax.xml.bind.JAXBException;
 public interface InterfazDao <T>{
     
     public void guardar(T dato) throws FileNotFoundException, JAXBException;
-    public void modificiar(T dato);
+    public void modificiar(T dato, Integer pos) throws FileNotFoundException, JAXBException;
     public ListaEnlazada<T> listar();
     public T obtener(Integer id);
     

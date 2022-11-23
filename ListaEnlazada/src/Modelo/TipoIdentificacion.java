@@ -10,5 +10,5 @@ package Modelo;
  * @author david
  */
 public enum TipoIdentificacion {
-    CEDULA, PASAPORTE;
+    CEDULA, PASAPORTE,RUC;
 }

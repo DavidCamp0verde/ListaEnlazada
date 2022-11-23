@@ -21,8 +21,9 @@ public class Persona {
     private String telefono;
     private String correo;
     private String identificacion;
-    private String tipoIdentificacion;
+    private TipoIdentificacion tipoIdentificacion;
     private Boolean estado;
+    private Integer id_rol;
 
     public Integer getId() {
         return id;
@@ -88,13 +89,15 @@ public class Persona {
         this.identificacion = identificacion;
     }
 
-    public String getTipoIdentificacion() {
+    public TipoIdentificacion getTipoIdentificacion() {
         return tipoIdentificacion;
     }
 
-    public void setTipoIdentificacion(String tipoIdentificacion) {
+    public void setTipoIdentificacion(TipoIdentificacion tipoIdentificacion) {
         this.tipoIdentificacion = tipoIdentificacion;
     }
+
+    
 
     public Boolean getEstado() {
         return estado;
@@ -102,6 +105,14 @@ public class Persona {
 
     public void setEstado(Boolean estado) {
         this.estado = estado;
+    }
+
+    public Integer getId_rol() {
+        return id_rol;
+    }
+
+    public void setId_rol(Integer id_rol) {
+        this.id_rol = id_rol;
     }
     
     

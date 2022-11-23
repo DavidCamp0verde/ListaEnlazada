@@ -38,22 +38,19 @@ public class AdaptadorDao<T> implements InterfazDao<T>{
     public void guardar(T dato) throws FileNotFoundException, JAXBException{
         ListaEnlazada<T> lista = listar();
         lista.insertar(dato);
-        //try {
             FileOutputStream file = new FileOutputStream(URL);
             JAXBContext jaxbc = JAXBContext.newInstance(new Class[]{ListaEnlazada.class, this.clazz});
-            Marshaller marshaller = jaxbc.createMarshaller();
+            Marshaller marshaller = jaxbc.createMarshaller(); //Transforma el objeto a xml
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.marshal(lista, file);
-//        } catch (Exception e) {
-//            System.out.println(e);
-//        }
     }
 
     @Override
-    public void modificiar(T dato) {
+    public void modificiar(T dato, Integer pos) throws FileNotFoundException, JAXBException{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
+    //Pasar de archivo a objeto
     @Override
     public ListaEnlazada<T> listar() {
         ListaEnlazada<T> lista = new ListaEnlazada<>();
@@ -61,12 +58,10 @@ public class AdaptadorDao<T> implements InterfazDao<T>{
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
             Document doc = db.parse(URL);
-            NodeList datos = doc.getElementsByTagName(this.clazz.getSimpleName().toLowerCase());
+            NodeList datos = doc.getElementsByTagName(this.clazz.getSimpleName().toLowerCase()); //Encontrar en el archivo las etiquetas de la clase que se busca
             for(int i = 0; i<datos.getLength();i++){
-                //System.out.println(datos.item(i));
                 Node n1 = datos.item(i);
                 NodeList nodo1 = n1.getChildNodes();
-                
                 T obj = this.clazz.newInstance();
                 
                 for(int j = 0; j <nodo1.getLength(); j++){
@@ -74,7 +69,7 @@ public class AdaptadorDao<T> implements InterfazDao<T>{
                     if(dato.getNodeName() != null && !dato.getNodeName().equalsIgnoreCase("")&& 
                             dato.getTextContent() != null && !dato.getTextContent().equalsIgnoreCase("") && !dato.getNodeName().equalsIgnoreCase("#Text")){
                         
-                        Method metodo = null;
+                        Method metodo = null; //llamar al método para fijar las etiquetas a un objeto de la clase que se pide
                         for(Method met : this.clazz.getMethods()){
                             if(met.getName().equalsIgnoreCase((("set"+Utilidades.capitalizar(dato.getNodeName()))))){
                                 metodo = met;
@@ -82,7 +77,6 @@ public class AdaptadorDao<T> implements InterfazDao<T>{
                             }
                             
                         }
-                        //System.out.println(metodo.getName());
                         metodo.invoke(obj, 
                          Utilidades.transformarDato(Utilidades.obtenerAtributo(clazz, dato.getNodeName()), dato.getTextContent()));
                         

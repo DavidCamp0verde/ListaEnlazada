@@ -2,17 +2,31 @@
 <listaEnlazada>
     <cabecera>
         <rol>
-            <descripcion>descripcion xd</descripcion>
+            <descripcion>Control de todo</descripcion>
             <id>1</id>
-            <nombre>gerente</nombre>
+            <nombre>Gerente</nombre>
         </rol>
         <siguiente>
             <rol>
-                <descripcion>cajero descripcion xd</descripcion>
+                <descripcion>Ayuda al gerente</descripcion>
                 <id>2</id>
-                <nombre>cajero</nombre>
+                <nombre>Asistente</nombre>
             </rol>
+            <siguiente>
+                <rol>
+                    <descripcion>Tiene permisos sobre el sistema</descripcion>
+                    <id>3</id>
+                    <nombre>Sistemas</nombre>
+                </rol>
+                <siguiente>
+                    <rol>
+                        <descripcion>Trae los dineros</descripcion>
+                        <id>4</id>
+                        <nombre>Cliente</nombre>
+                    </rol>
+                </siguiente>
+            </siguiente>
         </siguiente>
     </cabecera>
-    <size>2</size>
+    <size>4</size>
 </listaEnlazada>

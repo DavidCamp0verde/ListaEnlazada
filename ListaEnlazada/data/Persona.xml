@@ -2,15 +2,23 @@
 <listaEnlazada>
     <cabecera>
         <persona>
-            <apellidos>campoverde</apellidos>
+            <apellidos>Administrador</apellidos>
+            <correo>admin@admin.com</correo>
             <id>1</id>
-            <nombres>david</nombres>
+            <id_rol>3</id_rol>
+            <identificacion>1111111111</identificacion>
+            <nombres>Administrador</nombres>
+            <tipoIdentificacion>CEDULA</tipoIdentificacion>
         </persona>
         <siguiente>
             <persona>
-                <apellidos>Chimbo</apellidos>
+                <apellidos>Final</apellidos>
+                <correo>consumidor@admin.com</correo>
                 <id>2</id>
-                <nombres>Jhandry</nombres>
+                <id_rol>4</id_rol>
+                <identificacion>999999999</identificacion>
+                <nombres>Consumidor</nombres>
+                <tipoIdentificacion>CEDULA</tipoIdentificacion>
             </persona>
         </siguiente>
     </cabecera>
