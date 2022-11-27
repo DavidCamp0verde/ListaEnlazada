@@ -22,12 +22,65 @@
             </persona>
             <siguiente>
                 <persona>
-                    <apellidos>Intriago</apellidos>
-                    <identificacion>110521411245</identificacion>
-                    <nombres>Steven</nombres>
+                    <apellidos>Campoverde</apellidos>
+                    <correo>david@correoxd.com</correo>
+                    <direccion>mi casa</direccion>
+                    <id>3</id>
+                    <id_rol>4</id_rol>
+                    <identificacion>1105983041</identificacion>
+                    <nombres>David</nombres>
+                    <tipoIdentificacion>CEDULA</tipoIdentificacion>
                 </persona>
+                <siguiente>
+                    <persona>
+                        <apellidos>Soto</apellidos>
+                        <correo>sotooo@gmail.com</correo>
+                        <direccion>su casa</direccion>
+                        <id>4</id>
+                        <id_rol>4</id_rol>
+                        <identificacion>A234577</identificacion>
+                        <nombres>Mauricio</nombres>
+                        <tipoIdentificacion>PASAPORTE</tipoIdentificacion>
+                    </persona>
+                    <siguiente>
+                        <persona>
+                            <apellidos>S.A.</apellidos>
+                            <correo>empresa@yahoo.es</correo>
+                            <direccion>Loja</direccion>
+                            <id>5</id>
+                            <id_rol>4</id_rol>
+                            <identificacion>1124533215001</identificacion>
+                            <nombres>Empresa1</nombres>
+                            <tipoIdentificacion>RUC</tipoIdentificacion>
+                        </persona>
+                        <siguiente>
+                            <persona>
+<apellidos>Parker</apellidos>
+<correo>elhombrequearania@hotmail.com</correo>
+<direccion>Jipiro</direccion>
+<id>6</id>
+<id_rol>4</id_rol>
+<identificacion>A234557</identificacion>
+<nombres>Ivan</nombres>
+<tipoIdentificacion>PASAPORTE</tipoIdentificacion>
+                            </persona>
+                            <siguiente>
+<persona>
+    <apellidos>Mercurio</apellidos>
+    <correo>bohemiorapsodia@yahoo.es</correo>
+    <direccion>La pradera</direccion>
+    <id>7</id>
+    <id_rol>4</id_rol>
+    <identificacion>A1145265</identificacion>
+    <nombres>Alfredo</nombres>
+    <tipoIdentificacion>PASAPORTE</tipoIdentificacion>
+</persona>
+                            </siguiente>
+                        </siguiente>
+                    </siguiente>
+                </siguiente>
             </siguiente>
         </siguiente>
     </cabecera>
-    <size>3</size>
+    <size>7</size>
 </listaEnlazada>

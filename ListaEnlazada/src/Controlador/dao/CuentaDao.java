@@ -49,7 +49,7 @@ public class CuentaDao extends AdaptadorDao<Cuenta>{
     }
     
     public void crearCuenta(){
-        if(listar().estaVacia()){
+        if(listar().getSize() == 0){
             try {
                 PersonaDao pd = new PersonaDao();
                 pd.getPersona().setApellidos("Administrador");

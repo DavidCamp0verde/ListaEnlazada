@@ -138,6 +138,7 @@ public class ListaEnlazada<E> {
     }
     
     public E eliminar (Integer pos) throws ListaVaciaExcepcion, PosicionNoEncontradaException{
+        System.out.println("pos "+pos);
         if(!estaVacia()){
             E dato = null;
             if (pos>= 0 && pos < size){
